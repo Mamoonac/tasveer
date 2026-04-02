@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tasveer-maroon: #2A1515;
+  --tasveer-gold: #D4AF37;
+  --tasveer-gold-light: #f3d98a;
+}
+
+body {
+  margin: 0;
+  background-color: var(--tasveer-maroon);
+  color: white;
+  font-family: 'Inter', sans-serif; /* Standard clean sans-serif */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Luxury Display Font for Headings */
+h1, h2, h3, .font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom Component Classes */
+@layer components {
+  .tasveer-btn-primary {
+    @apply bg-gradient-to-r from-[#D4AF37] to-[#B8962E] text-[#2A1515] 
+           font-bold uppercase tracking-[0.2em] rounded-xl transition-all 
+           hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] 
+           active:scale-[0.98];
+  }
+
+  .glass-panel {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/5 shadow-2xl;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}

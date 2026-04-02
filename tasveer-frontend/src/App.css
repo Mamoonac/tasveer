@@ -1,0 +1,94 @@
+/* =========================
+   ✨ ANIMATIONS
+========================= */
+
+.dashboard-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =========================
+   🔥 GLASS PANEL (UPGRADED)
+========================= */
+
+.glass-panel {
+  background: rgba(42, 21, 21, 0.6);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 
+    0 10px 40px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+.glass-panel:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+
+/* =========================
+   🔥 PRIMARY BUTTON (UPGRADED)
+========================= */
+
+.tasveer-btn-primary {
+  background: linear-gradient(135deg, #D4AF37, #f3d98a);
+  color: #2A1515;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+  box-shadow: 
+    0 10px 25px rgba(212, 175, 55, 0.25);
+}
+
+/* HOVER */
+.tasveer-btn-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 
+    0 20px 40px rgba(212, 175, 55, 0.35),
+    0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* CLICK */
+.tasveer-btn-primary:active {
+  transform: scale(0.96);
+}
+
+
+/* =========================
+   ✨ GLOW UTILITY (NEW)
+========================= */
+
+.glow-gold {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+
+/* =========================
+   ✨ INPUT FOCUS EFFECT (NEW)
+========================= */
+
+.input-modern {
+  transition: all 0.25s ease;
+}
+
+.input-modern:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
